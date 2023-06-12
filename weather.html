@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WeatherApp-week5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="weather.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand"></a>
+            <form class="d-flex" role="search" id="form-search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="text-search-input"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                id="search-button"
+              >
+                Search
+              </button>
+              <div>
+              <button class="btn btn-outline-primary" type="button" id="second-button">current</button>
+              </div>
+            </form>
+          </div>
+        </nav>
+
+        <h1 id="heading-city-name">Istanbul, Turkey</h1>
+        <p class="my-city" id="my-city-realtime">Monday, 22:15</p>
+        <p class="my-prediction" id="prediction">mist</p>
+        <p class="degree" id="Degree">
+          ☁️ <span id="Degree-change">7°C</span>
+				</br> feels like <span class="temp-sense" id="temp-sensivity">7°C</span>
+        </p>
+        <p class="Extra-Info" id="Extra-info-data">
+          Precipitation: <span id="precipitation">2%</span>
+          <br />
+          Humidity: <span id="humidity">85%</span>
+          <br />
+          Wind: <span id="wind">2mph</span>
+        </p>
+
+        <ul class="decore">
+          <li class="Tuesday">
+            Tues<br />
+            ⛅<br />
+            12°/6°
+          </li>
+          <li class="Wednesday">
+            Wed<br />
+            🌨️<br />
+            12°/6°
+          </li>
+          <li class="Thursday">
+            Thu<br />
+            ⛈️<br />
+            12°/8°
+          </li>
+          <li class="Friday">
+            Fri<br />
+            🌧️<br />
+            12°/7°
+          </li>
+          <li class="Saturday">
+            Sat<br />
+            🌥️<br />
+            13°/7°
+          </li>
+          <li class="Sunday">
+            Sun<br />
+            🌥️<br />
+            13°/6°
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
