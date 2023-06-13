@@ -61,3 +61,9 @@ h1 {
   margin-top: 120px;
   padding-left: 240px;
 }
+.finish-line {
+  display: block;
+  position: relative;
+  font-size: 13.5px;
+  text-align: center;
+}
